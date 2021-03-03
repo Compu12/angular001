@@ -7,9 +7,19 @@
       <br>
       la suma es : = {{sumar(20,40)/20}}
       <br>
-      <input type="text" class="form-container " [placeholder]="mostrarMensaje()">
+      <input type="text" class="form-container " [placeholder]="mostrarMensaje()" [disabled]="activado">
 
     </h2>
   </div>
 
+  <img [src]="rutaImagen" alt="imagen" width="100px" height="100px">
+
+  <h3>{{textoEventBinding}}</h3>
+  <br>
+  <button class="btn btn-primary" (click)="cambiarTexto()">click me!</button>
+  <br>
+
+  <input type="text" class="form-control" placeholder="Ingrese su nombre aquí" [(ngModel)]="cadenaTwodataBinding">
+  <br>
+  {{cadenaTwodataBinding}}
 </div>
